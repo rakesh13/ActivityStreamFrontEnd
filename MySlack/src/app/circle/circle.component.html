@@ -1,0 +1,35 @@
+<h1>Circles</h1>
+<div class="addcircle">
+		<button mat-mini-fab color="primary" style="float: right;" mat-raised-button (click)="showCreateCircleDialog()">+</button>
+
+		<a href="#" (click)="showCreateCircleDialog()">Create Dialog</a>
+</div>
+<!-- <section class="demo-section">
+  <mat-button-toggle-group name="circles">
+    <mat-button-toggle *ngFor="let circle of circles" [value]="pie">
+      {{circle.circleName}}
+    </mat-button-toggle>
+	</mat-button-toggle-group>
+	</section>
+
+<!-- 	<div class="inset" *ngFor="let circle of circles" ng-cloak>
+		<md-switch aria-label="Switch 1">
+			Switch 1: {{circle.circleName}}
+		</md-switch>
+		</div> -->
+<div class="column">
+
+
+		
+					
+	<div class="circles">
+		
+	  <ul *ngFor="let circle of circles" [class.selected]="circle === selectedCircle" (click)="getMessagesByCircleName(circle.circleName)">
+		  <li><span class="glyphicon glyphicon-globe">{{circle.circleName}}</span>
+
+			</li>
+	  </ul>
+	</div>
+</div>
+
+
